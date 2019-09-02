@@ -29,6 +29,8 @@ How does [double requestanimationframe](https://stackoverflow.com/questions/4414
 
 VueJS: How to wait for a browser re-render? [Vue.nextTick doesn't seem to cover it.](https://github.com/vuejs/vue/issues/9200)
 
+Inspired by the advice of [Justineo] (https://github.com/Justineo)
+
 ## Usage
 
 ## Default import
