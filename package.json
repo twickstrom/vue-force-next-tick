@@ -1,0 +1,43 @@
+{
+  "name": "vue-force-next-tick",
+  "description": "When you need to ensure the DOM has been updated Vue's nextTick just doesn't work. You will need to use the double requestAnimationFrame. This is an elegant wrapper to allow you to use the double requestAnimationFrame method within your Vue applications either globally Vue.$forceNextTick(callback) or within a method this.$forceNextTick(callback)",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tim Wickstrom",
+    "email": "tim@wickstrom.me"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Tim Wickstrom",
+      "email": "tim@wickstrom.me",
+      "web": "https://timwickstrom.com"
+    }
+  ],
+  "contributors": [
+    "Tim Wickstrom <tim@wickstrom.me>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twickstrom/vue-force-next-tick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twickstrom/vue-force-next-tick/issues"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue.js",
+    "vue2",
+    "vue-force-next-tick",
+    "nextTick",
+    "forceNextTick",
+    "requestAnimationFrame",
+    "double requestAnimationFrame"
+  ],
+  "homepage": "https://github.com/twickstrom/vue-force-next-tick",
+  "main": "src/index.js",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
