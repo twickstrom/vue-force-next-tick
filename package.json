@@ -1,7 +1,7 @@
 {
   "name": "vue-force-next-tick",
   "description": "A Vue implantation of the double requestAnimationFrame method to force nextTick()",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Tim Wickstrom <tim@wickstrom.me>",
   "license": "MIT",
   "maintainers": [
