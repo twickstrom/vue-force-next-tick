@@ -64,7 +64,7 @@ methods: {
   <button
     @click="doSomethingBig"
   >
-    Unparse Sample Data
+    Lets count to 10 million!
   </button>
 </template>
 
