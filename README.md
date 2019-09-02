@@ -7,6 +7,7 @@
 * [VueForceNextTick](#vuepapaparse)
 * [Installation](#installation)
 * [Default import](#default-import)
+* [A bit of History](#history)
 * [Usage](#usage)
   * [Global Example](#global)
   * [Within a component](#component)
@@ -21,6 +22,12 @@ npm i vue-force-next-tick
 
 yarn add vue-force-next-tick
 ```
+
+## A bit of History
+
+How does [double requestanimationframe](https://stackoverflow.com/questions/44145740/how-does-double-requestanimationframe-work) work
+
+VueJS: How to wait for a browser re-render? [Vue.nextTick doesn't seem to cover it.](https://github.com/vuejs/vue/issues/9200)
 
 ## Usage
 
