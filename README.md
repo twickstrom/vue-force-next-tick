@@ -23,6 +23,13 @@ npm i vue-force-next-tick
 yarn add vue-force-next-tick
 ```
 
+## Default import
+```javascript
+import Vue from 'vue'
+import VueForceNextTick from 'vue-force-next-tick'
+Vue.use(VueForceNextTick)
+```
+
 ## A bit of History
 
 How does [double requestanimationframe](https://stackoverflow.com/questions/44145740/how-does-double-requestanimationframe-work) work
@@ -33,19 +40,10 @@ Inspired by the advice of [Justineo] (https://github.com/Justineo)
 
 ## Usage
 
-## Default import
-```javascript
-import Vue from 'vue'
-import VueForceNextTick from 'vue-force-next-tick'
-Vue.use(VueForceNextTick)
-```
-
-## Usage
-
 ### Global Example
 ```javascript
 Vue.$forceNextTick(() => {
-  // You code here.
+  // Your code here.
 })
 ```
 
@@ -54,7 +52,7 @@ Vue.$forceNextTick(() => {
 methods: {
   yourMethod () {
     this.$forceNextTick(() => {
-      // You code here.
+      // Your code here.
     })
   }
 }
