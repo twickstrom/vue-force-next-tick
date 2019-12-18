@@ -4,10 +4,20 @@ const doubleRequestAnimationFrame = (callback) => {
   })
 }
 
+const forceNextTick = (callback) => {
+  if (callback && typeof callback === 'function') {
+    doubleRequestAnimationFrame(callback)
+  } else {
+    return new Promise(resolve => {
+      doubleRequestAnimationFrame(resolve)
+    })
+  }
+}
+
 const VueForceNextTick = {
   install (Vue) {
-    Vue.$forceNextTick = doubleRequestAnimationFrame
-    Vue.prototype.$forceNextTick = doubleRequestAnimationFrame
+    Vue.$forceNextTick = forceNextTick
+    Vue.prototype.$forceNextTick = forceNextTick
   }
 }
 
