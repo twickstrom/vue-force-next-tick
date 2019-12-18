@@ -45,6 +45,10 @@ Inspired by the advice of [Justineo] (https://github.com/Justineo)
 Vue.$forceNextTick(() => {
   // Your code here.
 })
+
+// or 
+
+await Vue.$forceNextTick()
 ```
 
 ### Within a component
@@ -54,6 +58,13 @@ methods: {
     this.$forceNextTick(() => {
       // Your code here.
     })
+  }
+  
+  // or 
+  
+  async yourMethod () {
+    await this.$forceNextTick()
+    // Your code here.
   }
 }
 ```
