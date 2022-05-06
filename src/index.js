@@ -15,9 +15,13 @@ const forceNextTick = (callback) => {
 }
 
 const VueForceNextTick = {
-  install (Vue) {
-    Vue.$forceNextTick = forceNextTick
-    Vue.prototype.$forceNextTick = forceNextTick
+  install (app) {
+    if ('config' in app && 'globalProperties' in app.config) {
+      app.config.globalProperties.$forceNextTick = forceNextTick
+    } else {
+      app.$forceNextTick = forceNextTick
+      app.prototype.$forceNextTick = forceNextTick
+    }
   }
 }
 
